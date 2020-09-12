@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='pl' xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset='UTF-8'>
+    <title>Rock Scissors & Paper - JS Game</title>
+    <link rel="icon" type="image/png" href="assets/icon/favicon-32x32.png" sizes="16x16"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+</head>
+<body>
+<header>
+    <h1>Rock, Scissors & Paper </h1>
+</header>
+<section class="game" id="game">
+
+    <div class="welcomeScreen" id="welcomeScreen">
+        <p>JavaScript Web Game - "Rock, Scissors & Paper"</p>
+        <button id="startGame">Start Game</button>
+    </div>
+
+    <div class="gameArena fadeOut">
+        <div class="gameRules" id="gameRules">
+            <p>Game Rules: "Rock beats scissors, scissors beat paper, paper beats rock."</p>
+            <p>Select either rock, paper or scissors, and see if you can beat AI!</p>
+        </div>
+        <div class="scoreBoard" id="scoreBoard">
+            <div class="badge" id="user">YOU</div>
+            <div class="badge" id="computer">AI</div>
+            <span id="userScore">0</span>:<span id="computerScore">0</span>
+        </div>
+        <div class="gameResult" id="gameResult">
+            <h1>Chose your symbol</h1>
+        </div>
+        <div class="symbols" id="symbols">
+            <div class="symbol" id="rock">
+                <img src="assets/symbols/rock.svg" alt="rock" id="rock_img" style="width:100%">
+            </div>
+            <div class="symbol" id="scissors">
+                <img src="assets/symbols/scissors.svg" alt="scissors" id="scissors_img" style="width:100%">
+            </div>
+            <div class="symbol" id="paper">
+                <img src="assets/symbols/paper.svg" alt="paper" id="paper_img" style="width:100%">
+            </div>
+        </div>
+        <p id="action">Make your move!</p>
+        <div class="restartGame" id="restartGame">
+            <button id="restartGameButton">Restart Game</button>
+        </div>
+    </div>
+
+</section>
+<script src="app.js"></script>
+</body>
+</html>

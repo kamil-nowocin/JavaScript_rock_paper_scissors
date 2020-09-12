@@ -1,0 +1,183 @@
+/*FOR ENTIRE PAGE*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*CONFIGURATION GOR WHOLE DOCUMENT*/
+body {
+    background: #1C2833;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+/*TOP BAR*/
+header {
+    background: white;
+    padding: 15px;
+}
+
+/*TOP BAR HEADER*/
+header > h1 {
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    font-size: 55px;
+}
+
+/*USER WELCOME SCREEN*/
+.welcomeScreen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px 100px;
+    transition: opacity 0.5s ease;
+}
+
+.welcomeScreen > p {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.welcomeScreen > button,
+.restartGame > button {
+    margin: 25px auto;
+    width: 200px;
+    height: 50px;
+    background: #BA4A00;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-family: "Comic Sans MS", sans-serif;
+    border-radius: 5px;
+}
+
+.welcomeScreen > button:hover,
+.restartGame > button:hover {
+    cursor: pointer;
+    transform: scale(1.1) perspective(1px);
+    box-shadow: 0 0 10px #FBFCFC;
+}
+
+/*INTRO ON, GAME OFF*/
+.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*INTRO OFF, GAME ON */
+.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/*GAME LAYOUT*/
+.gameArena {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+/*GAME DETAILS*/
+.gameRules {
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.scoreBoard {
+    margin: 30px auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 150px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.badge {
+    background: #BA4A00;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: relative;
+}
+
+/*YOU BADGE*/
+#user {
+    position: absolute;
+    top: 30px;
+    left: -15px;
+}
+
+/*AI BADGE*/
+#computer {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+}
+
+.gameResult {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+/*GAME SYMBOLS*/
+.symbols {
+    text-align: center;
+    margin: 50px;
+}
+
+.symbol {
+    display: inline-block;
+    width: 25%;
+    margin: 10px 20px;
+    border: 6px solid #BA4A00;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.symbol:hover {
+    cursor: pointer;
+    background: #808B96;
+    transform: scale(1.1) perspective(1px);
+}
+
+.green-glow {
+    border: 6px solid #2ECC71;
+    box-shadow: 0 0 100px #2ECC71;
+}
+
+.red-glow {
+    border: 6px solid #A93226;
+    box-shadow: 0 0 100px #A93226;
+}
+
+.white-glow {
+    border: 6px solid #FBFCFC;
+    box-shadow: 0 0 100px #FBFCFC;
+}
+
+/*BOTTOM LABEL*/
+#action {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.restartGame {
+    margin: 25px auto;
+    text-align: center;
+}
