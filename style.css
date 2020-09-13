@@ -2,12 +2,14 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 /*CONFIGURATION GOR WHOLE DOCUMENT*/
 body {
     background: #1C2833;
     font-family: "Comic Sans MS", sans-serif;
+    height: 60px;
 }
 
 /*TOP BAR*/
@@ -43,6 +45,36 @@ header > h1 {
     font-size: 25px;
 }
 
+.welcomeScreen > .roundsInput {
+    display: flex;
+    justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.roundsInput > label > input {
+    justify-content: center;
+    margin: 20px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 20px;
+    -webkit-appearance: none;
+}
+
+.roundsNumber > p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
 .welcomeScreen > button,
 .restartGame > button {
     margin: 25px auto;
@@ -53,7 +85,7 @@ header > h1 {
     color: white;
     font-size: 30px;
     font-family: "Comic Sans MS", sans-serif;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .welcomeScreen > button:hover,
@@ -67,6 +99,7 @@ header > h1 {
 .fadeIn {
     opacity: 1;
     pointer-events: all;
+    transition: opacity 0.5s ease 0.5s;
 }
 
 /*INTRO OFF, GAME ON */
@@ -77,16 +110,12 @@ header > h1 {
 
 /*GAME LAYOUT*/
 .gameArena {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -52%);
     transition: opacity 0.5s ease 0.5s;
 }
 
 /*GAME DETAILS*/
 .gameRules {
-    margin-top: 250px;
     color: white;
     text-align: center;
     font-size: 25px;
@@ -141,7 +170,7 @@ header > h1 {
 
 .symbol {
     display: inline-block;
-    width: 25%;
+    width: 15%;
     margin: 10px 20px;
     border: 6px solid #BA4A00;
     border-radius: 50%;
@@ -170,7 +199,7 @@ header > h1 {
 }
 
 /*BOTTOM LABEL*/
-#action {
+#roundsCounter {
     text-align: center;
     color: white;
     font-size: 25px;
@@ -180,4 +209,43 @@ header > h1 {
 .restartGame {
     margin: 25px auto;
     text-align: center;
+}
+
+/*ENDGAME*/
+.endGame {
+    margin: auto auto;
+    width: 750px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    transform: translate(0%, -370%);
+}
+
+.endGameResult {
+    background: #BA4A00;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    /*transition: all 0.4s ease;*/
+}
+
+/*YOU BADGE*/
+#userEndGameResult {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    font-size: 50px;
+}
+
+/*AI BADGE*/
+#computerEndGameResult {
+    position: absolute;
+    top: 180px;
+    right: 50px;
+    font-size: 50px;
+}
+
+.endGame > span {
+    font-size: 100px;
 }
