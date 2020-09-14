@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 /*CONFIGURATION GOR WHOLE DOCUMENT*/
@@ -123,8 +122,6 @@ input::-webkit-inner-spin-button {
 
 .scoreBoard {
     margin: 30px auto;
-    border: 2px solid white;
-    border-radius: 5px;
     width: 150px;
     color: white;
     font-size: 35px;
@@ -136,7 +133,7 @@ input::-webkit-inner-spin-button {
 .badge {
     background: #BA4A00;
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     border: 2px solid white;
     border-radius: 5px;
     position: relative;
@@ -145,15 +142,15 @@ input::-webkit-inner-spin-button {
 /*YOU BADGE*/
 #user {
     position: absolute;
-    top: 30px;
-    left: -15px;
+    top: 20px;
+    left: -65px;
 }
 
 /*AI BADGE*/
 #computer {
     position: absolute;
-    top: 30px;
-    right: -10px;
+    top: 20px;
+    right: -45px;
 }
 
 .gameResult {
