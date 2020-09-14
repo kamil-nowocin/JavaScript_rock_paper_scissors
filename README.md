@@ -5,9 +5,10 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/kamil-nowocin/JavaScript_rock_paper_scissors?style=flat-square)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/kamil-nowocin/JavaScript_rock_paper_scissors?style=flat-square)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555)](https://linkedin.com/in/kamil-nowocin)
-
 ## ABOUT PROJECT
 Simple JavaScript/HTML/CSS web game available at: [kamil_nowocin.github.io/JavaScript_rock_paper_scissors](https://kamil-nowocin.github.io/JavaScript_rock_paper_scissors/)
+
+![Imgur](https://imgur.com/ZsQUxok.gif)
 ## AUTHORS
 - **Kamil Nowocin** - *Initial work* - [Kamil Nowocin](https://github.com/kamil-nowocin)
 ## LICENSE
